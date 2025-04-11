@@ -1,5 +1,9 @@
 def log_decorator(func):
-     pass
+    def wrapper():
+        print("Message avant")
+        func()
+        print("Message après")
+    return wrapper
  
 @log_decorator
 def function_test():
