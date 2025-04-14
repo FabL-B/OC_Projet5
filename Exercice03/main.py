@@ -6,13 +6,3 @@ liste_finale = [
 ]
 
 print(liste_finale)
-
-sans_comprehension_de_liste = []
-for word in words:
-    nb_voyelle = 0
-    for letter in word:
-        if letter in voyelles:
-            nb_voyelle += 1
-    sans_comprehension_de_liste.append((word, nb_voyelle))
-
-print(sans_comprehension_de_liste)
